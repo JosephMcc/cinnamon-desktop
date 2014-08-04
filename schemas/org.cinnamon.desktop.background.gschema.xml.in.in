@@ -48,4 +48,37 @@
       </_description>
     </key>
   </schema>
+
+  <schema id="org.cinnamon.desktop.background.slideshow" path="/org/cinnamon/desktop/background/slideshow/">
+    <key name="mode" type="s">
+      <default>"wallpaper"</default>
+      <summary>Background mode</summary>
+      <description>
+        This key defines the whether the desktop background shows one
+        single wallpaper, or a slideshow.
+      </description>
+    </key>
+    <key name="slideshow-sources" type="as">
+      <default>[]</default>
+      <summary>Image sources to use for the slideshow</summary>
+      <description>
+        This key defines the sources to use for the slideshow, in the form of type:path. 
+        Supported types are folder and image.
+      </description>
+    </key>
+    <key name="slideshow-delay" type="i">
+      <default>15</default>
+      <summary>Delay for the slideshow</summary>
+      <description>
+        This key defines the delay for the slideshow.
+      </description>
+    </key>
+    <key name="slideshow-enabled" type="b">
+      <default>true</default>
+      <summary>Whether the slideshow is currently playing or paused</summary>
+      <description>
+        This key defines whether the slideshow in currently in a playing or paused state.
+      </description>
+    </key>
+  </schema>
 </schemalist>
